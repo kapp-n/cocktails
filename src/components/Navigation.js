@@ -6,7 +6,8 @@ const link = {
     padding: '12px',
     margin: '0 6px 6px',
     textDecoration: 'none',
-    color: '#fbd1dd'
+    color: '#f9bacc',
+    background: '#FD4F7B',
 }
 
 const Navigation = () => {
@@ -17,15 +18,20 @@ const Navigation = () => {
                 exact
                 style={link}
                 activeStyle={{
-                    background: '#FD4F7B'
+                    background: 'white',
+                    borderStyle: 'inset',
+                    borderColor: '#FD4F7B'
+                    
                 }}
             >Home</NavLink>
              <NavLink
-                to="/"
+                to="/Add"
                 exact
                 style={link}
                 activeStyle={{
-                    background: '#FD4F7B'
+                    background: 'white',
+                    borderStyle: 'inset',
+                    borderColor: '#FD4F7B'
                 }}
             >Add</NavLink>
              <NavLink
@@ -33,7 +39,9 @@ const Navigation = () => {
                 exact
                 style={link}
                 activeStyle={{
-                    background: '#FD4F7B'
+                    background: 'white',
+                    borderStyle: 'inset',
+                    borderColor: '#FD4F7B'
                 }}
             >Menu</NavLink>
         </div>
