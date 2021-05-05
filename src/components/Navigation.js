@@ -35,7 +35,7 @@ const Navigation = () => {
                 }}
             >Add</NavLink>
              <NavLink
-                to="/"
+                to="/Menu"
                 exact
                 style={link}
                 activeStyle={{
