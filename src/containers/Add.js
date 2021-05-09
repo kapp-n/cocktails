@@ -6,6 +6,7 @@ export default class Add extends Component {
 
     state={
         drinks: [],
+        menu: [],
         selection: ''
 
     }
@@ -23,7 +24,7 @@ export default class Add extends Component {
         .then(res => res.json())
         .then(response =>{
             let six = response.drinks.slice(0,6)
-            //console.log(six)
+            console.log(six)
             this.setState({
                 drinks: six
             })
@@ -31,6 +32,25 @@ export default class Add extends Component {
         })
     }
 
+    addToMenu = (cocktail) => this.setState({menu: cocktail}, this.postToDB)
+
+
+    postToDB = () => {
+        fetch('http://localhost:3001/menu', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(this.state.menu)
+        })
+        .then(res => res.json())
+        .then(data => console.log(data) )
+        console.log('menu')
+    }
+      
+
+
+   
 
 
     render() {
@@ -45,10 +65,11 @@ export default class Add extends Component {
                             <option value="Vodka">Vodka</option>
                             <option value="Whiskey">Whiskey</option>
                         </select>
-                      <input type="submit" value="Go!"/>
+                      <input type="submit" value="Submit"/>
                 </form>
-                <hr/>
-                <CocktailList cocktails={this.state.drinks} />
+                <hr className="hr"/>
+                <CocktailList add={this.addToMenu} cocktails={this.state.drinks} />
+                
             </div>
         )
     }

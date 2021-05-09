@@ -1,9 +1,9 @@
 import React from 'react'
 import Cocktail from './Cocktail'
 
-const CocktailList = ({ cocktails }) => {
+const CocktailList = ({ cocktails, add }) => {
     let list = cocktails.map(drink => {
-        return <Cocktail cocktail={drink} />})
+        return <Cocktail key={drink.id} click={add} cocktail={drink} />})
     
     return (
         <div className="List">

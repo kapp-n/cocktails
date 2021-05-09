@@ -2,7 +2,7 @@
   text-align: center;
   color: #fbd1dd;
   text-decoration: wavy underline #FD4F7B;
-  text-decoration-thickness: 4px;
+  /* text-decoration-thickness: 4px; */
   padding-top: 20px
 }
 
@@ -25,8 +25,74 @@
 
 }
 
+.Add {
+  color:#FD4F7B
+}
 
+.Add select {
+  color: #FD4F7B;
+  border-style: solid;
+  background-color: #fbd1dd;
+  border-color: #FD4F7B;
+}
 
+.Add input {
+  color: #FD4F7B;
+  background-color: #fbd1dd;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #FD4F7B;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: 5px;
+}
 
+.hr {
+  border-color: #FD4F7B;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.List li {
+  border-style: double;
+  width: 380px;
+  height: 310px;
+  border-width: 15px;
+  border-radius: 25px;
+  margin-left: 400px;
+  margin-right: 300px;
+  margin-bottom: 50px;
+}
+
+.Cocktail button {
+  color:#FD4F7B;
+  background-color: #fbd1dd;
+  border-color: #FD4F7B;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 15px;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 26px;
+  cursor: pointer;
+}
+
+.Cocktail img {
+  border-radius: 15px;
+}
+
+.Item {
+  text-align: center;
+  color: #FD4F7B;
+  font-size: 28px;
+}
+
+.Item img {
+  border-style: double;
+  border-width: 10px;
+  border-radius: 20px;
+
+}
 
 
