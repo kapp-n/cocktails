@@ -32,7 +32,8 @@ export default class Menu extends Component {
             )
         })
         return (
-            <div>
+            <div className="drinks">
+                <h1>Your Menu</h1>
                 {drinks}
             </div>
         )
